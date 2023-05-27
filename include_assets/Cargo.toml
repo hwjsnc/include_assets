@@ -1,0 +1,19 @@
+[package]
+name = "include_assets"
+version = "1.0.0"
+edition = "2021"
+license = "LGPL-3.0-only"
+description = "include compressed assets in a Rust executable"
+
+[features]
+default = ["all"]
+
+all = ["deflate", "lz4", "zstd"]
+
+deflate = ["include_assets_encode/deflate", "include_assets_decode/deflate"]
+lz4 = ["include_assets_encode/lz4", "include_assets_decode/lz4"]
+zstd = ["include_assets_encode/zstd", "include_assets_decode/zstd"]
+
+[dependencies]
+include_assets_decode = { path = "../include_assets_decode", version = "0.1.0" }
+include_assets_encode = { path = "../include_assets_encode", version = "0.1.0" }

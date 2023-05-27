@@ -1,0 +1,8 @@
+[workspace]
+members = ["include_assets", "include_assets_encode", "include_assets_decode", "examples/named", "examples/enums"]
+
+[profile.release]
+opt-level = "s"
+debug = false
+strip = true
+lto = true

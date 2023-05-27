@@ -1,0 +1,22 @@
+[package]
+name = "include_assets_decode"
+version = "0.1.0"
+edition = "2021"
+description = "use include_assets instead of this"
+license = "LGPL-3.0-only"
+
+[features]
+default = []
+
+deflate = ["dep:yazi"]
+lz4 = ["dep:lz4_flex"]
+zstd = ["dep:zstd"]
+
+[dependencies]
+blake2 = "0.10.6"
+hexhex = "1.0.0"
+smartstring = "1.0.1"
+
+lz4_flex = { version = "0.10.0", optional = true, default-features = false, features = ["std", "safe-encode", "safe-decode"] }
+yazi = { version = "0.1.6", optional = true }
+zstd = { version = "0.12.3", optional = true, default-features = false }
