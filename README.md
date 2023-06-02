@@ -49,7 +49,7 @@ fn main() {
 
 ## Licence
 
-This crate is (probably going to be but NOT CURRENTLY) licensed under the LGPL v3.
+This crate is licensed under the LGPL v3.
 
 
 ## Compression
