@@ -114,6 +114,6 @@ However, it leads to better compression because the compression algorithm can ta
 
 ## Contributing
 
-Bug reports are very welcome.
+[Bug reports](https://github.com/hwjsnc/include_assets/issues) are very welcome.
 Feature requests are also welcome, but no promises.
 I do not plan to accept patches at this time.
